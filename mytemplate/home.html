@@ -1,0 +1,15 @@
+<html>
+	<head>
+		<title>All posts!</title>
+	</head>
+	<body>
+	<h1>Just Chill</h1>  
+		<ol>
+			{% for p in posts %}
+			<li><a href='/post/{{ p.id }}'>{{ p.title }}</a></li>
+			{% endfor %}
+			
+		</ol>
+		<a href='http://127.0.0.1:8000/admin/'>admin login </a>
+	</body>
+</html>
