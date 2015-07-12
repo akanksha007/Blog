@@ -1,11 +1,19 @@
-<html>
-	<head>
-		<title>{{ post.title }}</title>
-	</head>
-	<body>
-		{{ post.content }}
-		<p />
-		<a href='/'>Back</a>
-		
-	</body>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+<title>My Blog</title>
+<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}style.css">
+</head>
+<body>
+<div id="header">{{ post.title }}</div>
+<div id="nav">
+{{ post.content }}
+<ul>
+<li><a href="/">Back to blog archive</a></li>
+</ul>
+</div>
+<div id="content">
+<div id="primary">
+</div>
+</body>
 </html>
